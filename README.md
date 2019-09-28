@@ -1,1 +1,1 @@
-# core-java
+# repo for core-java concepts
