@@ -8,6 +8,7 @@ public class ArraysSearchDemo {
 		
 		int[] a = {10, 5, 20, 11, 6};
 		Arrays.sort(a);
+		
 		System.out.println(Arrays.binarySearch(a, 6));
 		System.out.println(Arrays.binarySearch(a, 14));
 		

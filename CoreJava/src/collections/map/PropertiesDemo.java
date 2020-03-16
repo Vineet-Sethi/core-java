@@ -20,7 +20,7 @@ public class PropertiesDemo {
 	public static void main(String[] args) throws Exception 
 	{
 		Properties p = new Properties();
-		FileInputStream fis = new FileInputStream("abc.properties");
+		FileInputStream fis = new FileInputStream("D:\\HHCIB\\codes\\core-java\\CoreJava\\src\\collections\\map\\abc.properties");
 		p.load(fis);
 		
 		System.out.println(p);
@@ -30,7 +30,7 @@ public class PropertiesDemo {
 		
 		p.setProperty("nag", "88888");
 		
-		FileOutputStream fos = new FileOutputStream("abc.properties");
+		FileOutputStream fos = new FileOutputStream("D:\\HHCIB\\codes\\core-java\\CoreJava\\src\\collections\\map\\abc.properties");
 		p.store(fos, "Updated properties file");
 		
 		//dbPropertiesExample();

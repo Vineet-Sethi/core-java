@@ -1,0 +1,13 @@
+A semaphore is used to control the number of threads that can access a resource. The Semaphore class lies in the java.util.concurrent package
+and you can create a semaphore using one of its constructors, like so:
+
+final int MAX_PERMITS  = 3;
+Semaphore  s = new Semaphores(MAX_PERMITS, true);
+
+where the second argument is boolean fairness to create a fair semaphore. Such a semaphore will guarantee first in, first out (FIFO). That is, 
+the thread that asked for the permit first will get the permit first.
+
+To acquire a permit, use the acquire() method. It returns immediately if a permit is available.It blocks if a permit is not available.
+The thread can be interrupted while it is waiting for the permit to become available. Other methods of the Semaphore class let you acquire 
+one or multiple permits in one go. 
+To release a permit, use the release() method.

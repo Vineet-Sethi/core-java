@@ -1,13 +1,5 @@
 package multithreading;
 
-/*
-		priority --------> JVM(5)
-		         --------> programmer (1 - 10)  //IllegalArgumentException otherwise
-		         
-		        priorities 1,5,10 have enums
-		         
-		getPriority(), setPriority(int) signatures are regular getter setter signatures except that they are final.
- */
 public class ThreadPriority {
 
 	public static void main(String[] args) {

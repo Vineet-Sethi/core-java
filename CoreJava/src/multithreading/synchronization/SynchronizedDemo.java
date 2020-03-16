@@ -13,10 +13,10 @@ public class SynchronizedDemo
 {
 	public static void main(String[] args) 
 	{
-		//Display disp2 = new Display();
+		Display disp2 = new Display();
 		Display disp = new Display();
 		Thread t1 = new MyThread(disp ,"StudentA");
-		Thread t2 = new MyThread(disp ,"StudentB");
+		Thread t2 = new MyThread(disp2 ,"StudentB");
 		
 		t1.start();
 		t2.start();

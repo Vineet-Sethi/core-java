@@ -29,7 +29,7 @@
      		
      		throws <ExceptionName> //1. Expects a Throwable type else you get compile time error incompatible types found xxx; required: Throwable.
      							   //2. Can be used with methods and constructors.
-     	                           //3. throws for unchecked exceptions ???
+     	                           //3. throws for unchecked exceptions ??? Not compu lsory
 
      	Hence we can delay handling the exception by using throws when defining the method. However it then becomes the responsibility of the caller 
      	method to handle the exception. But again at the caller method we can again use throws and so on and we can actually propagate the exception

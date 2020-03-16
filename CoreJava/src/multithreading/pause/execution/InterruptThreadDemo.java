@@ -23,9 +23,9 @@ class InterruptedThread extends Thread
 		
 		for(int i = 0; i < 10; i ++) 
 		{
-			System.out.println("I am lazy thread");
+			System.out.println("I am lazy thread " + i);
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 			} 
 			catch (InterruptedException e) {
 				System.out.println("I got interrupted");

@@ -27,7 +27,8 @@ public class CollectionsSearchDemo {
 		System.out.println(Collections.binarySearch(l, 10, new MyIntComparator()));
 		System.out.println(Collections.binarySearch(l, 13, new MyIntComparator()));
 		System.out.println(Collections.binarySearch(l, 6)); // unpredictable
-		//System.out.println(Collections.binarySearch(l, 17, new MyIntComparator())); // -2
+		System.out.println(Collections.binarySearch(l, -1, new MyIntComparator())); // -2
+		
 	}
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })

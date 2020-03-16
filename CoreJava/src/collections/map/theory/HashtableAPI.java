@@ -1,4 +1,10 @@
 /*
+ *  1. Basics
+ *	2. Constructors
+ *	3. Properties
+*/
+
+/*
 	Hashtable: The underlying DS is hashtable. Insertion order is not preserved and it is based on hashcode of keys. Duplicate keys are not 
 	allowed and values can be duplicated. Heterogeneous objects are allowed for both keys and values. Null is not allowed for both key and value
 	otherwise we will get runtime exception saying null pointer exception. It implements Serializable and cloneable interfaces but not RandomAccess
@@ -34,5 +40,6 @@
     	void load(InputStream is)                       // to load properties from .properties file into java properties object
     	void store(OutputStream os, String comment)     // to store properties from java properties object into properties file
       
+	
 	
 */

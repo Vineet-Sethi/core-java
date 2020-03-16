@@ -27,6 +27,7 @@ public class CollectionsSortDemo
 		//l.addAll(null);          //-- NPE when sorted
 		
 		System.out.println("Before Sorting:" + l);
+		
 		Collections.sort(l);
 		System.out.println("After Sorting:" + l);
 	}
@@ -40,6 +41,8 @@ public class CollectionsSortDemo
 		System.out.println("Before Sorting:" + l);
 		Collections.sort(l, new MyComparator());
 		System.out.println("After Sorting:" + l);
+		
+		l.sort(new MyComparator());
 	}
 }
 

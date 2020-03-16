@@ -1,7 +1,21 @@
 /*
+ *  1. Basics
+ *  2. Methods
+ *	2. Constructors
+ *	3. vs #Table
+*/
+/*
 	Map: Map is NOT a child interface of collection. If we want to represent a group of objects as key-value pairs then we should go for Map. Both
 	keys and values are objects only. Duplicates keys are not allowed but values can be duplicated. Each key-value pair is called as an Entry hence
 	Map is considered as a collection of Entry objects.
+	
+	    1. The underlying data structure is Hashtable
+	 	2. Insertion order is not preserved and it is based on hashcode of keys.
+	 	3. Duplicate keys are not allowed but values can be duplicated.
+	 	4. Null is allowed for key(only once as no duplicates for key are allowed). However any no of null values are allowed
+	 	5. Heterogeneous objects are allowed for both keys and values.
+	 	6. HashMap implements Serializable & Cloneable interfaces but not Random access.
+	 	7. HashMap is the best choice if our frequent operation is searching.
 	
 	Map interface methods
 		Object put(Object key, Object value) - To add one key value pair to the Map.
@@ -44,13 +58,7 @@
 	   	}
 	   	
 	 HashMap
-	 	1. The underlying data structure is Hashtable
-	 	2. Insertion order is not preserved and it is based on hashcode of keys.
-	 	3. Duplicate keys are not allowed but values can be duplicated.
-	 	4. Null is allowed for key(only once as no duplicates for key are allowed). However any no of null values are allowed
-	 	5. Heterogeneous objects are allowed for both keys and values.
-	 	6. HashMap implements Serializable & Cloneable interfaces but not Random access.
-	 	7. HashMap is the best choice if our frequent operation is searching.
+	 	
 	 	
 	 	Constructors:
 	 		1. HashMap m = new HashMap()                    //empty HashMap with default initial capacity 16 and default fillRatio 0.75

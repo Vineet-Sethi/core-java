@@ -30,5 +30,20 @@ public class GenericsSolution {
  * 2. Polymorphism applicable only for base and not parameter type
  * 		List<String> nameList = new ArrayList<String>();          //fine
  *      List<Object> nameList = new ArrayList<String>();          //not fine
- *      
- */ 
+ 
+    AL list = new AL<String>();
+	AL list = new AL<Integer>();
+	AL list = new AL<Double>();
+	
+	ArrayList list1 = new ArrayList<String>();
+    list1.add(10);
+    list1.add("abc");
+    list1.add(5.5);
+	
+	And below declarations are also equal but you can only add strings to the list.
+	
+	AL<String> l = new AL<String>();
+	AL<String> l = new AL();
+	
+	So basically the left side of the declaration decides the type of the generic object.
+*/

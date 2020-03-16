@@ -1,0 +1,31 @@
+
+1. Multitasking: Executing several tasks simultaneously is known as multitasking. For eg on a machine I can write code in any editor/IDE and 
+               listen to a song and at the same time download a big file from the internet. All these tasks can happen in parallel. This type
+               of multitasking is called process based multitasking and is best suitable at OS level.
+               
+               Similarly a java program can be broken into several independent parts and all parts can be executed simultaneously. These 
+               independent executing parts of the Java program are called threads and the process is called thread based multitasking.
+               
+               Nevertheless the main objective of multitasking is to improve performance.  
+               
+   Creating a thread.   
+               
+2. MyThread t = new MyThread();
+        New/Born ---------------------> Ready/Runnable  --------------------------------> Running -------------------------> Dead
+      					t.start()                          If TS allocates processor                 When run() completes
+
+
+3.				<----------------------------------------- MyRunnable
+	Runnable(I) <----------- Thread(C) <------------------ MyThread
+      run();                  run() { } //empty Impl
+      		            	  start(){  //calls run()
+      		            	     ...
+      		            	     ...
+      		            	  }
+          		            	  
+4. priority --------> JVM(5)
+             --------> programmer (1 - 10)  //IllegalArgumentException otherwise
+         
+        priorities 1,5,10 have enums
+         
+   getPriority(), setPriority(int) signatures are regular getter setter signatures except that they are final.

@@ -62,7 +62,7 @@
 	    child exception class is unchecked then the exception is a partially checked exception. 
 	    
 	 Hierarchy Diagram: Refer pdf.
-	    RuntimeException and its child classes AND Error and its classes are unchecked and all others are checked exceptions
+	    RuntimeException and its child classes AND Error and its classes are unchecked and all others are checked exceptions.
 	 
 	 Customized Exception Handling
 		 We can use try-catch block to handle exception. Not using them would them would result in abnormal termination of our program. When we
@@ -76,7 +76,7 @@
 			 4. If an exception is raised within "catch" block or any statement after try catch - abnormal termination.
 			 5. If no exception is thrown then catch block is not executed.
 			 6. Within a try-catch block if there is no chance of throwing a particular exception and still if we write a corresponding catch block
-			    then we get a compile time error as 
+			    then we   get a compile time error as 
 			        Exception xxx is never thrown in the body of the corresponding try block. 
 			    ***** This rule is only applicable to fully checked exceptions
 	     

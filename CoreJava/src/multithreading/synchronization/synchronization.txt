@@ -1,4 +1,3 @@
-/*
 	Data inconsistency problem
 		In a multi-threaded environment there is always a chance of data inconsistency problem. For eg in case of bank account transactions if
 		2 people who have access to the same bank account and are trying to withdraw money at the same time, the bank application will function
@@ -17,7 +16,7 @@
 		During this time all other threads need to wait till a thread is holding the lock. Acquiring and releasing of lock is taken care by the
 		JVM and the programmer is not responsible for it. 
 		
-		Please note that once a thread has acquired a lock on any synchronized method of an object even other synchronized methods of the same 
+		Please note that once a thread has acquired a lock on any synchronized method of an object, even other synchronized methods of the same 
 		object are inaccessible to other threads. This is important to preserve object state. However other non-synchronized methods are still
 		accessible and threads can access them. Hence based on this we can divide an object containing 2 areas - one synchronized area and the 
 		other non-synchronized area. A class designer must write update/edit/delete etc operations in synchronized section to preserve object 
@@ -61,4 +60,9 @@
 			          }
 			     }
 			}
-*/
+
+
+sync - not for primitives
+sync(this)
+sync(ref)
+sync(___.class)

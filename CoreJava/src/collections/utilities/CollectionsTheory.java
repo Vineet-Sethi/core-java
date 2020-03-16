@@ -14,8 +14,7 @@
 			
 			These conditions are the same as when adding elements to a TreeSet and TreeMap where-in it made sense to compare only homogeneous objects.
 			Secondly they must be comparable meaning the compareTo method is overridden which is always the basis of sorting no matter which collection
-			it is. Lastly nulls are usually not allowed in such scenarios as again whats the point in comparing something to null and sorting it. Even 
-			when null was allowed it had to be the one and only element in the sorted collection.
+			it is.
 			
 		2. public static void sort(List l, Comparator c)   //To sort based on Customized Sorting Order
 						

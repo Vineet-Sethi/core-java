@@ -8,7 +8,6 @@ In MyOwnGeneric<T>, T is unbounded and we can pass anything to it. However we ca
 	
 1. <T extends Number>   - If X is class then T here can be either that class type or its child classes
 2. <T extends Runnable> - If X is interface then T here can be either that interface type or its implementing classes. However we still have to use extends keyword only.
-							eg <T extends Runnable>
 3. <T extends Runnable & Comparable>          - We can immplement more than one interface with & i.e <T extends Runnable & Comparable>
 4. <T extends Number & Runnable & Comparable> - We can extend exactly one class but any no of interfaces as <T extends Number & Runnable & Comparable> - class first followed by interfaces
 5. Finally we see that we can only use extends keyword and not implements or super.

@@ -16,9 +16,9 @@ public class TreeMapDemo {
 		 m.put(100, "ZZZ");
 		 m.put(103, "XXX");
 		 m.put(101, "YYY");
-		 m.put(104, 106);
+		 m.put(104, 106);         //values can be heterogeneous
 		 
-		 //m.put("FFFF", "XXX");  //CCE
+		 //m.put("FFFF", "XXX");  //CCE With DNSO keys should be homogeneous
 		 //m.put(null, "XXX");    //NPE
 		 
 		 System.out.println(m);

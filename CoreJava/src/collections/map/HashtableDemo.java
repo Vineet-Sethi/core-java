@@ -39,6 +39,6 @@ class Tempr
 	}
 	public String toString()
 	{
-		return i + "";
+		return i + "..";
 	}
 }

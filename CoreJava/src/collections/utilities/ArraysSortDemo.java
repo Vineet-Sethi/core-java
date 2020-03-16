@@ -8,6 +8,8 @@ public class ArraysSortDemo {
 	public static void main(String[] args) {
 		
 		int[]  a = {10, 5, 20, 11, 6};
+		
+		
 		System.out.print("Primitive array before sorting ");
 		for(int a1: a)
 			System.out.print(a1 + " ");

@@ -1,3 +1,11 @@
+/*  Sorted Map(I)
+ *  1. Basics - I, key based sorting
+ *  2. Methods - fk lk hm tm sm c
+ *  
+ *  TreeMap
+ *	1. Basics - RB tree, keys - DNSO/custom, nullability
+ *  2. Constructors
+*/
 /*
 	SortedMap(I): It is a child interface of Map. If we want to represent a group of key-value pairs according to some sorting order of keys then 
 	we should go for SortedMap. The sorting is based on keys and not values.

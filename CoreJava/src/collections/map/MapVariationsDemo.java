@@ -8,16 +8,16 @@ import java.util.WeakHashMap;
 public class MapVariationsDemo {
 	public static void main(String[] args) throws InterruptedException {
 		
-		linkedHashMapDemo();
-		identityHashMapDemo();
+		//linkedHashMapDemo();
+		//identityHashMapDemo();
 		weakHashMapDemo();
 		
 	}
 
 	private static void weakHashMapDemo() throws InterruptedException {
 		
-		//HashMap m2= new HashMap();     //Temp object will not be eligible for GC if associated with HashMap. Hence O/P = {temp=Durga} both times
-		WeakHashMap m= new WeakHashMap();//Temp will be garbage collected as GC will dominate WeakHashMap
+		HashMap m= new HashMap();     //Temp object will not be eligible for GC if associated with HashMap. Hence O/P = {temp=Durga} both times
+		//WeakHashMap m= new WeakHashMap();//Temp will be garbage collected as GC will dominate WeakHashMap
 		Temp t = new Temp();
 		m.put(t, "Durga");
 		System.out.println(m);

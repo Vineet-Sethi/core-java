@@ -1,13 +1,5 @@
 package multithreading;
-/*
-					<----------------------------------------- MyRunnable
-		Runnable(I) <----------- Thread(C) <------------------ MyThread
-          run();                  run() { } //empty Impl
-          		            	  start(){  //calls run()
-          		            	     ...
-          		            	     ...
-          		            	  }
-*/
+
 public class ImplementsRunnableDemo {
 	
 	public static void main(String[] args) {
